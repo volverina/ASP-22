@@ -1,0 +1,30 @@
+<html>
+  <head>
+	<meta charset="urf-8">
+    	<script src="libs/aframe.min.js"></script>
+	<script data-consolejs-channel="5447ce1e-2001-2bda-c9fb-89b0860ada74" src="https://remotejs.com/agent/agent.js"></script>
+  </head>
+  <body>
+	<a-scene>
+      		<a-sky color="gray" ></a-sky>
+		<a-torus color="green" position="-2 1 -5" radius="1.25"
+			animation="property: components.material.material.color; type: color; from: green; to: red; dur: 5000; loop: true"
+		></a-torus>
+		<a-plane color="purple" height="7" width="7" position="-3 -2 -3" rotation="-90 0 0" src="assets/mysky.png"></a-plane>
+		<a-cylinder color="yellow" height="2" radius="0.05" position="-2 -1 -5"></a-cylinder>
+		<a-cylinder color="yellow" height="2" radius="0.05" position="-3 -1 -5"></a-cylinder>
+		<a-torus-knot color="orange" radius="1.2" position="-3 1 -5"
+			animation="property: rotation; to: 0 360 0; loop: true; dur: 6000"></a-torus-knot>
+		<a-plane color="#A0A0A0" height="2" width="10" position="3 1 -9"></a-plane>
+		<a-text font="assets/custom-msdf.json" negate="false"
+			value="Hello, World! - Привіт, світ!" color="black" width="10" position="-0.3 1 -6"></a-text>
+<!--		<a-sphere position="1 2.7 -5" src="assets/GGO_spread-wings_Mel-Clements.jpg" animation="property: rotation; to: 180 360 360; loop: true; dur: 6000"></a-sphere>-->
+		<a-entity rotation="45 0 0" position="1 2.7 -5">
+			<a-cylinder color="red" height="2.5" radius="0.05" ></a-cylinder>
+			<a-sphere src="assets/2k_earth_daymap.jpg" animation="property: rotation; to: 0 360 0; loop: true; dur: 12000"></a-sphere>
+		</a-entity>
+
+
+	</a-scene>
+  </body>
+</html>
